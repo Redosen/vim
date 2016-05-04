@@ -52,7 +52,7 @@ endif
 " ===============
 " solarized color
 " ===============
-set background=light
+set background=dark
 set t_Co=256
 let g:solarized_termcolors = 256
 let g:solarized_visibility = "high"
@@ -89,7 +89,7 @@ vnoremap <Leader>s <C-C>:update<CR>
 inoremap <Leader>s <C-O>:update<CR>
 
 " Quick quit command
-noremap <Leader>e :quit<CR>  " Quit current window
+noremap <Leauer>e :quit<CR>  " Quit current window
 noremap <Leader>E :qa!<CR>   " Quit all windows
 
 " bind Ctrl+<movement> keys to move around the windows, instead of using Ctrl+w + <movement>
@@ -223,9 +223,9 @@ let Tlist_Use_Right_Window = 1
 let NERDTreeQuitOnOpen = 0
 let NERDTreeIgnore=['.pyc$[[file]]','.gitignore$[[dir]]']
 let g:nerdtree_tabs_open_on_gui_startup = 1
-map <F5> :NERDTreeToggle<cr>
-vmap <F5> <esc>:NERDTreeToggle<cr>
-imap <F5> <esc>:NERDTreeToggle<cr>
+map <C-E> :NERDTreeToggle<CR>
+vmap <C-E> :NERDTreeToggle<CR>
+imap <C-E> :NERDTreeToggle<CR>
 map <leader>nt :NERDTreeToggle<cr>
 vmap <leader>nt <esc>:NERDTreeToggle<cr>
 imap <leader>nt <esc>:NERDTreeToggle<cr>
